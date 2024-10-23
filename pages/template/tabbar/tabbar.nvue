@@ -1,5 +1,5 @@
 <template>
-    <view class="tabs">
+    <!--<view class="tabs">
         <scroll-view id="tab-bar" class="scroll-h" :scroll-x="true" :show-scrollbar="false" :scroll-into-view="scrollInto">
             <view v-for="(tab,index) in tabBars" :key="tab.id" class="uni-tab-item" :id="tab.id" :data-current="index" @click="ontabtap">
                 <text class="uni-tab-item-title" :class="tabIndex==index ? 'uni-tab-item-title-active' : ''">{{tab.name}}</text>
@@ -8,7 +8,7 @@
         <view class="line-h"></view>
         <swiper :current="tabIndex" class="swiper-box" style="flex: 1;" :duration="300" @change="ontabchange">
             <swiper-item class="swiper-item" v-for="(tab,index1) in newsList" :key="index1">
-				<!-- #ifdef APP-NVUE -->
+				
 				<list class="scroll-v list" enableBackToTop="true" scroll-y loadmoreoffset="15" @loadmore="loadMore(index1)">
 					<refresh class="refresh" @refresh="onrefresh(index1)" @pullingdown="onpullingdown" :display="tab.refreshing ? 'show' : 'hide'">
 						<div class="refresh-view">
@@ -24,8 +24,6 @@
 						<text class="loading-more-text">{{tab.loadingText}}</text>
 					</cell>
 				</list>
-				<!-- #endif -->
-				<!-- #ifndef APP-NVUE -->
 				<scroll-view class="scroll-v list" enableBackToTop="true" scroll-y @scrolltolower="loadMore(index1)">
 					<view v-for="(newsitem,index2) in tab.data" :key="newsitem.id">
 						<media-item :options="newsitem" @close="close(index1,index2)" @click="goDetail(newsitem)"></media-item>
@@ -34,10 +32,9 @@
 						<text class="loading-more-text">{{tab.loadingText}}</text>
 					</view>
 				</scroll-view>
-				<!-- #endif -->
             </swiper-item>
         </swiper>
-    </view>
+    </view>-->
 </template>
 <script>
     import mediaItem from './news-item.nvue';

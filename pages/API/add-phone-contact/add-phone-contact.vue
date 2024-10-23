@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<!--<view>
 		<page-head :title="title"></page-head>
 		<view class="uni-common-mt">
 			<view class="uni-list">
@@ -26,7 +26,7 @@
 				</view>
 			</view>
 		</view>
-	</view>
+	</view>-->
 </template>
 <script>
 	// #ifdef APP-PLUS

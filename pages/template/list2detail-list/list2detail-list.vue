@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<!--<view>
 		<view class="banner" @click="goDetail(banner)">
 			<image class="banner-img" :src="banner.cover"></image>
 			<view class="banner-title">{{ banner.title }}</view>
@@ -18,15 +18,13 @@
 						</view>
 					</view>
 				</view>
-				<!-- #ifdef APP-PLUS -->
 				<view class="ad-view" v-if="(index > 0 && (index+1) % 10 == 0)">
 					<ad :adpid="adpid" @error="aderror"></ad>
 				</view>
-				<!-- #endif -->
 			</block>
 		</view>
 		<uni-load-more :status="status" :icon-size="16" :content-text="contentText" />
-	</view>
+	</view>-->
 </template>
 
 <script>

@@ -70,7 +70,7 @@
 		},
 		onShareAppMessage() {
 			return {
-				title: this.shareText ? this.shareText : "欢迎体验uni-app",
+				title: this.shareText ? this.shareText : "欢迎体验 WH开发工具箱",
 				path: '/pages/tabBar/component/component',
 				imageUrl:this.image ? this.image : 'https://web-assets.dcloud.net.cn/unidoc/zh/share-logo@3.png'
 			}

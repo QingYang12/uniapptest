@@ -120,7 +120,7 @@
 							scene: this.providerList[res.tapIndex].type && this.providerList[res.tapIndex].type === 'WXSceneTimeline' ?
 								'WXSceneTimeline' : "WXSceneSession",
 							type: (provider === "qq") ? 1 : 0,
-							title: '欢迎体验uni-app',
+							title: '欢迎体验 WH开发工具箱',
 							summary: 'uni-app 是一个使用 Vue.js 开发跨平台应用的前端框架',
 							imageUrl: 'https://web-assets.dcloud.net.cn/unidoc/zh/8.jpg',
 							href: "https://m3w.cn/uniapp",

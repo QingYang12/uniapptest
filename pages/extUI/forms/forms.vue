@@ -1,11 +1,10 @@
 <template>
-	<view class="container">
+	<!--<view class="container">
 		<uni-card :is-shadow="false" is-full>
 			<text class="uni-h6">uni-forms 组件一般由输入框、选择器、单选框、多选框等控件组成，用以收集、校验、提交数据。</text>
 		</uni-card>
 		<uni-section title="基本用法" type="line">
 			<view class="example">
-				<!-- 基础用法，不包含校验规则 -->
 				<uni-forms ref="baseForm" :model="baseFormData" labelWidth="80px">
 					<uni-forms-item label="姓名" required>
 						<uni-easyinput v-model="baseFormData.name" placeholder="请输入姓名" />
@@ -46,7 +45,6 @@
 						styleType="button">
 					</uni-segmented-control>
 				</view>
-				<!-- 展示不同的排列方式 -->
 				<uni-forms ref="baseForm" :modelValue="alignmentFormData" :label-position="alignment">
 					<uni-forms-item label="姓名" required>
 						<uni-easyinput v-model="baseFormData.name" placeholder="请输入姓名" />
@@ -60,7 +58,6 @@
 
 		<uni-section title="表单校验" type="line">
 			<view class="example">
-				<!-- 基础表单校验 -->
 				<uni-forms ref="valiForm" :rules="rules" :model="valiFormData" labelWidth="80px">
 					<uni-forms-item label="姓名" required name="name">
 						<uni-easyinput v-model="valiFormData.name" placeholder="请输入姓名" />
@@ -78,7 +75,6 @@
 
 		<uni-section title="自定义校验规则" type="line">
 			<view class="example">
-				<!-- 自定义表单校验 -->
 				<uni-forms ref="customForm" :rules="customRules" labelWidth="80px" :modelValue="customFormData">
 					<uni-forms-item label="姓名" required name="name">
 						<uni-easyinput v-model="customFormData.name" placeholder="请输入姓名" />
@@ -97,7 +93,6 @@
 
 		<uni-section title="动态表单" type="line">
 			<view class="example">
-				<!-- 动态表单校验 -->
 				<uni-forms ref="dynamicForm" :rules="dynamicRules" :model="dynamicFormData" labelWidth="80px">
 					<uni-forms-item label="邮箱" required name="email">
 						<uni-easyinput v-model="dynamicFormData.email" placeholder="请输入姓名" />
@@ -116,7 +111,7 @@
 				</view>
 			</view>
 		</uni-section>
-	</view>
+	</view>-->
 </template>
 
 <script>

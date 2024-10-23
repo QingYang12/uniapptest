@@ -143,7 +143,7 @@
 		},
 		onShareAppMessage() {
 			return {
-				title: '欢迎体验uni-app',
+				title: '欢迎体验 WH开发工具箱',
 				path: '/pages/tabBar/template/template'
 			}
 		},
